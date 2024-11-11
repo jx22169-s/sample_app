@@ -1,0 +1,19 @@
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/debug-1.7.1/ext/debug
+/usr/local/rvm/rubies/ruby-3.2.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-l8ll5x sitelibdir\=./.gem.20241109-43103-l8ll5x clean
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-l8ll5x sitelibdir\=./.gem.20241109-43103-l8ll5x
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-l8ll5x sitelibdir\=./.gem.20241109-43103-l8ll5x install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20241109-43103-l8ll5x/debug
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-l8ll5x sitelibdir\=./.gem.20241109-43103-l8ll5x clean

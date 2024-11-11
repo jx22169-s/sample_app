@@ -1,0 +1,18 @@
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+/usr/local/rvm/rubies/ruby-3.2.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-ck6j08 sitelibdir\=./.gem.20241109-43103-ck6j08 clean
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-ck6j08 sitelibdir\=./.gem.20241109-43103-ck6j08
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-ck6j08 sitelibdir\=./.gem.20241109-43103-ck6j08 install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20241109-43103-ck6j08/bootsnap
+
+current directory: /workspaces/sample_app/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.16.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20241109-43103-ck6j08 sitelibdir\=./.gem.20241109-43103-ck6j08 clean
