@@ -1,3 +1,4 @@
+test/integration/users_signup_test.rb
 require "test_helper"
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
@@ -10,14 +11,22 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          password:              "foo",
                                          password_confirmation: "bar" } }
     end
-    # follow_redirect! は不要なので削除
-    # 'new' テンプレートが再表示されていることを確認
-    assert_template 'users/new'
-    # ステータスコードが422（Unprocessable Entity）であることを確認
     assert_response :unprocessable_entity
-    # エラー表示用のCSSセレクタが正しいことを確認
+    assert_template 'users/new'
     assert_select 'div#error_explanation'
-    # エラーに関連するCSSクラスが存在することを確認
     assert_select 'div.field_with_errors'
+
+  end
+  test "valid signup information" do
+    assert_difference 'User.count', 1 do
+      post users_path, params: { user: { name:  "Example User",
+                                         email: "user@example.com",
+                                         password:              "password",
+                                         password_confirmation: "password" } }
+    end
+    follow_redirect!
+    assert_template 'users/show'
+    assert_not flash.empty?
+
   end
 end
