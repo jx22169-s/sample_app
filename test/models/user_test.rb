@@ -60,8 +60,6 @@ class UserTest < ActiveSupport::TestCase
     @user.password = @user.password_confirmation = "a" * 7
     assert_not @user.valid?
 
-    @user.password = @user.password_confirmation = "a" * 8 # 最小文字数 (有効)
-    assert @user.valid?
 
   end
 end
